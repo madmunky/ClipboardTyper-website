@@ -288,3 +288,36 @@ a { color: inherit; }
     scroll-behavior: auto !important;
   }
 }
+
+.hero-compact {
+  padding-top: 3rem;
+}
+
+.policy {
+  max-width: 920px;
+  margin: 1rem auto 0;
+  padding: 1.3rem;
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+}
+
+.policy h2 {
+  font-size: 1.26rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.policy ul {
+  margin: 0.25rem 0 1rem;
+  padding-left: 1.1rem;
+}
+
+.policy li {
+  color: #b8c5d6;
+  margin: 0.3rem 0;
+}
+
+.policy a {
+  color: #93c5fd;
+}
