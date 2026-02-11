@@ -2,42 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ClipboardTyper</title>
-  <meta name="description" content="ClipboardTyper is a macOS menu bar app that types clipboard text into focused apps after a configurable delay.">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ClipboardTyper | Features and Support</title>
+  <meta name="description" content="ClipboardTyper is a macOS menu bar utility that types clipboard content into the active app after a configurable shortcut and delay.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ClipboardTyper">
+  <meta property="og:description" content="Configurable shortcut and delay typing for environments where paste is blocked.">
+  <meta property="og:image" content="https://madmunky.github.io/ClipboardTyper-website/assets/app-icon.png">
+  <meta property="og:url" content="https://madmunky.github.io/ClipboardTyper-website/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <main class="page">
-    <header class="hero">
-      <h1>ClipboardTyper</h1>
-      <p>Type clipboard content into the active app after a shortcut and delay. Designed for environments where paste is blocked.</p>
-      <div class="actions">
-        <a class="button primary" href="https://github.com/madmunky/ClipboardTyper-source">Source (Private)</a>
-        <a class="button" href="https://github.com/madmunky/ClipboardTyper-website">Website Repo</a>
+  <div class="background-glow glow-1" aria-hidden="true"></div>
+  <div class="background-glow glow-2" aria-hidden="true"></div>
+
+  <header class="container">
+    <nav class="top-nav">
+      <a class="brand" href="./">ClipboardTyper</a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#support">Support</a>
+        <a href="https://github.com/madmunky/ClipboardTyper-website/issues" target="_blank" rel="noreferrer">Feedback</a>
       </div>
-    </header>
+    </nav>
+  </header>
 
-    <section>
-      <h2>Features</h2>
-      <ul>
-        <li>Global shortcut trigger</li>
-        <li>Configurable delay before typing</li>
-        <li>Optional delay between keystrokes</li>
-        <li>Menu bar operation with accessibility permission guidance</li>
+  <main>
+    <section class="hero" id="top">
+      <span class="badge">Native macOS Utility</span>
+      <h1>ClipboardTyper Feature Overview</h1>
+      <p class="hero-subtitle">
+        ClipboardTyper runs in your menu bar and types clipboard text into the active app after a global shortcut.
+        Ideal for remote sessions where paste is blocked.
+      </p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="https://github.com/madmunky/ClipboardTyper-website/issues/new?title=Bug%20report:%20" target="_blank" rel="noreferrer">Report a Bug</a>
+        <a class="btn btn-secondary" href="mailto:madmunkey@gmail.com?subject=ClipboardTyper%20Feedback">Send Feedback</a>
+      </div>
+    </section>
+
+    <section class="mockup-wrap container">
+      <div class="mockup-container">
+        <div class="mockup-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <img class="hero-shot" src="assets/app-icon.png" alt="ClipboardTyper app icon" loading="eager" decoding="async">
+      </div>
+    </section>
+
+    <section class="features container" id="features">
+      <article class="feature-card">
+        <h2 class="feature-title">Global Shortcut Trigger</h2>
+        <p>Choose your own shortcut key and modifier combination from app settings.</p>
+      </article>
+      <article class="feature-card">
+        <h2 class="feature-title">Delay Before Typing</h2>
+        <p>Set a countdown before typing starts so you can focus the target input field.</p>
+      </article>
+      <article class="feature-card">
+        <h2 class="feature-title">Delay Between Keys</h2>
+        <p>Optional per-keystroke delay for remote apps that need slower synthetic input timing.</p>
+      </article>
+      <article class="feature-card">
+        <h2 class="feature-title">Feedback Built In</h2>
+        <p>The app menu includes direct options for email feedback or opening a GitHub issue.</p>
+      </article>
+      <article class="feature-card">
+        <h2 class="feature-title">Permission Guidance</h2>
+        <p>On first launch, the app prompts for typing permission and exposes quick accessibility settings access.</p>
+      </article>
+      <article class="feature-card">
+        <h2 class="feature-title">Remote Session Friendly</h2>
+        <p>Uses virtual key events to improve behavior in environments like Citrix, RDP, and Parsec.</p>
+      </article>
+    </section>
+
+    <section class="container support-template" id="support">
+      <h2>Support</h2>
+      <p>Need help, found a bug, or want a feature? Use one of the options below.</p>
+      <ul class="capability-list">
+        <li>Email support: <a href="mailto:madmunkey@gmail.com?subject=ClipboardTyper%20Support">madmunkey@gmail.com</a></li>
+        <li>Issue tracker: <a href="https://github.com/madmunky/ClipboardTyper-website/issues" target="_blank" rel="noreferrer">GitHub Issues</a></li>
+        <li>Source repository: <a href="https://github.com/madmunky/ClipboardTyper-source" target="_blank" rel="noreferrer">Private Source Repo</a></li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Support and Feedback</h2>
-      <p>Email: <a href="mailto:madmunkey@gmail.com?subject=ClipboardTyper%20Feedback">madmunkey@gmail.com</a></p>
-      <p>Bug reports: <a href="https://github.com/madmunky/ClipboardTyper-source/issues/new">Open a GitHub issue</a></p>
-    </section>
-
-    <section>
-      <h2>Privacy</h2>
-      <p>ClipboardTyper runs locally on your Mac. It reads clipboard text only when you trigger typing. No analytics or tracking are included by default.</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="https://github.com/madmunky/ClipboardTyper-website/issues/new?title=Feature%20request:%20" target="_blank" rel="noreferrer">Request a Feature</a>
+        <a class="btn btn-secondary" href="mailto:madmunkey@gmail.com?subject=ClipboardTyper%20Feedback">Email Feedback</a>
+      </div>
     </section>
   </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> ClipboardTyper</p>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#support">Support</a>
+      <a href="https://github.com/madmunky/ClipboardTyper-website/issues" target="_blank" rel="noreferrer">Issues</a>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>
